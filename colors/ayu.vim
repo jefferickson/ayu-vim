@@ -1,3 +1,5 @@
+" Modified ayu.vim theme
+"
 " Initialisation:"{{{
 " ----------------------------------------------------------------------------
 hi clear
@@ -14,7 +16,7 @@ let g:colors_name = "ayu"
 
 let s:palette = {}
 
-let s:palette.bg        = {'dark': "#0F1419",  'light': "#FAFAFA",  'mirage': "#212733"}
+let s:palette.bg        = {'dark': "#0F1419",  'light': "#FAFAFA",  'mirage': "#262626"}
 
 let s:palette.comment   = {'dark': "#5C6773",  'light': "#ABB0B6",  'mirage': "#5C6773"}
 let s:palette.markup    = {'dark': "#F07178",  'light': "#F07178",  'mirage': "#F07178"}
@@ -31,8 +33,8 @@ let s:palette.error     = {'dark': "#FF3333",  'light': "#FF3333",  'mirage': "#
 let s:palette.accent    = {'dark': "#F29718",  'light': "#FF6A00",  'mirage': "#FFCC66"}
 let s:palette.panel     = {'dark': "#14191F",  'light': "#FFFFFF",  'mirage': "#272D38"}
 let s:palette.guide     = {'dark': "#2D3640",  'light': "#D9D8D7",  'mirage': "#3D4751"}
-let s:palette.line      = {'dark': "#151A1E",  'light': "#F3F3F3",  'mirage': "#242B38"}
-let s:palette.selection = {'dark': "#253340",  'light': "#F0EEE4",  'mirage': "#343F4C"}
+let s:palette.line      = {'dark': "#151A1E",  'light': "#F3F3F3",  'mirage': "#303030"}
+let s:palette.selection = {'dark': "#253340",  'light': "#F0EEE4",  'mirage': "#444444"}
 let s:palette.fg        = {'dark': "#E6E1CF",  'light': "#5C6773",  'mirage': "#D9D7CE"}
 let s:palette.fg_idle   = {'dark': "#3E4B59",  'light': "#828C99",  'mirage': "#607080"}
 
@@ -89,7 +91,7 @@ exe "hi! ColorColumn"   .s:fg_none        .s:bg_line        .s:fmt_none
 exe "hi! CursorColumn"  .s:fg_none        .s:bg_line        .s:fmt_none
 exe "hi! CursorLine"    .s:fg_none        .s:bg_line        .s:fmt_none
 exe "hi! CursorLineNr"  .s:fg_accent      .s:bg_line        .s:fmt_none
-exe "hi! LineNr"        .s:fg_guide       .s:bg_none        .s:fmt_none
+hi LineNr guifg=#4d4d4d guibg=#1f1f1f
 
 exe "hi! Directory"     .s:fg_fg_idle     .s:bg_none        .s:fmt_none
 exe "hi! DiffAdd"       .s:fg_string      .s:bg_panel       .s:fmt_none
@@ -98,7 +100,7 @@ exe "hi! DiffText"      .s:fg_fg          .s:bg_panel       .s:fmt_none
 exe "hi! ErrorMsg"      .s:fg_fg          .s:bg_error       .s:fmt_stnd
 exe "hi! VertSplit"     .s:fg_bg          .s:bg_none        .s:fmt_none
 exe "hi! Folded"        .s:fg_fg_idle     .s:bg_panel       .s:fmt_none
-exe "hi! FoldColumn"    .s:fg_none        .s:bg_panel       .s:fmt_none
+hi FoldColumn guibg=#202020
 exe "hi! SignColumn"    .s:fg_none        .s:bg_panel       .s:fmt_none
 "   Incsearch"
 
